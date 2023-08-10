@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="VeterinariaLSDataSet" targetNamespace="http://tempuri.org/VeterinariaLSDataSet.xsd" xmlns:mstns="http://tempuri.org/VeterinariaLSDataSet.xsd" xmlns="http://tempuri.org/VeterinariaLSDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="VeterinariaLSConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="VeterinariaLSConnectionString (Settings)" PropertyReference="ApplicationSettings.Proyecto_Integrador.Properties.Settings.GlobalReference.Default.VeterinariaLSConnectionString" Provider="System.Data.OleDb" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="EmpleadoTableAdapter" GeneratorDataComponentClassName="EmpleadoTableAdapter" Name="Empleado" UserDataComponentName="EmpleadoTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="VeterinariaLSConnectionString (Settings)" DbObjectName="Empleado" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Código_EM, Nombre, Apellido, Cédula, Teléfono, Calle, Barrio, Sector, Municipio, Provincia, FechaIngreso, Categoría, FechaNacimiento, Género, Nacionalidad, Edad, EstadoCivil, Sueldo, Cargo, NivelAcademico, [E-mail], Foto FROM Empleado</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Ficha de ingresoTableAdapter" GeneratorDataComponentClassName="Ficha_de_ingresoTableAdapter" Name="Ficha de ingreso" UserDataComponentName="Ficha de ingresoTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="VeterinariaLSConnectionString (Settings)" DbObjectName="Ficha de ingreso" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Código_F, Código_P, Código_M, Fecha FROM [Ficha de ingreso]</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="InventarioTableAdapter" GeneratorDataComponentClassName="InventarioTableAdapter" Name="Inventario" UserDataComponentName="InventarioTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="VeterinariaLSConnectionString (Settings)" DbObjectName="Inventario" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Código_IN, Articulo, Cantidad, Fecha, Código_EM FROM Inventario</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="MascotasTableAdapter" GeneratorDataComponentClassName="MascotasTableAdapter" Name="Mascotas" UserDataComponentName="MascotasTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="VeterinariaLSConnectionString (Settings)" DbObjectName="Mascotas" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Código_M, Código_p, Nombre, Código_R, Fechanacimiento, Tipoalimento, Código_C, Código_CI, Observación FROM Mascotas</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="PropietarioTableAdapter" GeneratorDataComponentClassName="PropietarioTableAdapter" Name="Propietario" UserDataComponentName="PropietarioTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="VeterinariaLSConnectionString (Settings)" DbObjectName="Propietario" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Código_p, nombre, apellido, Cédula, Teléfono, Calle, Barrio, Sector, Municipio, Provincia, FechaIngreso, Código_C, Fechanacimiento, Género, Nacionalidad, Edad, Estadocivil, Email, Observación FROM Propietario</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="UsuariosTableAdapter" GeneratorDataComponentClassName="UsuariosTableAdapter" Name="Usuarios" UserDataComponentName="UsuariosTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="VeterinariaLSConnectionString (Settings)" DbObjectName="Usuarios" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT ID, Nombre, Apellido, Tel, Correo, Pais, USUARIO, [PASSWORD] FROM Usuarios</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="VeterinariaLSDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_UserDSName="VeterinariaLSDataSet" msprop:Generator_DataSetName="VeterinariaLSDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Empleado" msprop:Generator_RowEvHandlerName="EmpleadoRowChangeEventHandler" msprop:Generator_RowDeletedName="EmpleadoRowDeleted" msprop:Generator_RowDeletingName="EmpleadoRowDeleting" msprop:Generator_RowEvArgName="EmpleadoRowChangeEvent" msprop:Generator_TablePropName="Empleado" msprop:Generator_RowChangedName="EmpleadoRowChanged" msprop:Generator_RowChangingName="EmpleadoRowChanging" msprop:Generator_TableClassName="EmpleadoDataTable" msprop:Generator_RowClassName="EmpleadoRow" msprop:Generator_TableVarName="tableEmpleado" msprop:Generator_UserTableName="Empleado">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Ficha_x0020_de_x0020_ingreso" msprop:Generator_RowEvHandlerName="Ficha_de_ingresoRowChangeEventHandler" msprop:Generator_RowDeletedName="Ficha_de_ingresoRowDeleted" msprop:Generator_RowDeletingName="Ficha_de_ingresoRowDeleting" msprop:Generator_RowEvArgName="Ficha_de_ingresoRowChangeEvent" msprop:Generator_TablePropName="Ficha_de_ingreso" msprop:Generator_RowChangedName="Ficha_de_ingresoRowChanged" msprop:Generator_RowChangingName="Ficha_de_ingresoRowChanging" msprop:Generator_TableClassName="Ficha_de_ingresoDataTable" msprop:Generator_RowClassName="Ficha_de_ingresoRow" msprop:Generator_TableVarName="tableFicha_de_ingreso" msprop:Generator_UserTableName="Ficha de ingreso">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Inventario" msprop:Generator_RowEvHandlerName="InventarioRowChangeEventHandler" msprop:Generator_RowDeletedName="InventarioRowDeleted" msprop:Generator_RowDeletingName="InventarioRowDeleting" msprop:Generator_RowEvArgName="InventarioRowChangeEvent" msprop:Generator_TablePropName="Inventario" msprop:Generator_RowChangedName="InventarioRowChanged" msprop:Generator_RowChangingName="InventarioRowChanging" msprop:Generator_TableClassName="InventarioDataTable" msprop:Generator_RowClassName="InventarioRow" msprop:Generator_TableVarName="tableInventario" msprop:Generator_UserTableName="Inventario">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Mascotas" msprop:Generator_RowEvHandlerName="MascotasRowChangeEventHandler" msprop:Generator_RowDeletedName="MascotasRowDeleted" msprop:Generator_RowDeletingName="MascotasRowDeleting" msprop:Generator_RowEvArgName="MascotasRowChangeEvent" msprop:Generator_TablePropName="Mascotas" msprop:Generator_RowChangedName="MascotasRowChanged" msprop:Generator_RowChangingName="MascotasRowChanging" msprop:Generator_TableClassName="MascotasDataTable" msprop:Generator_RowClassName="MascotasRow" msprop:Generator_TableVarName="tableMascotas" msprop:Generator_UserTableName="Mascotas">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Propietario" msprop:Generator_RowEvHandlerName="PropietarioRowChangeEventHandler" msprop:Generator_RowDeletedName="PropietarioRowDeleted" msprop:Generator_RowDeletingName="PropietarioRowDeleting" msprop:Generator_RowEvArgName="PropietarioRowChangeEvent" msprop:Generator_TablePropName="Propietario" msprop:Generator_RowChangedName="PropietarioRowChanged" msprop:Generator_RowChangingName="PropietarioRowChanging" msprop:Generator_TableClassName="PropietarioDataTable" msprop:Generator_RowClassName="PropietarioRow" msprop:Generator_TableVarName="tablePropietario" msprop:Generator_UserTableName="Propietario">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Usuarios" msprop:Generator_RowEvHandlerName="UsuariosRowChangeEventHandler" msprop:Generator_RowDeletedName="UsuariosRowDeleted" msprop:Generator_RowDeletingName="UsuariosRowDeleting" msprop:Generator_RowEvArgName="UsuariosRowChangeEvent" msprop:Generator_TablePropName="Usuarios" msprop:Generator_RowChangedName="UsuariosRowChanged" msprop:Generator_RowChangingName="UsuariosRowChanging" msprop:Generator_TableClassName="UsuariosDataTable" msprop:Generator_RowClassName="UsuariosRow" msprop:Generator_TableVarName="tableUsuarios" msprop:Generator_UserTableName="Usuarios">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
